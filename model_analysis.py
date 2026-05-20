@@ -18,7 +18,7 @@ y_test = pipeline_data["y_test"]
 
 # previsioni
 y_pred_proba = rf_model.predict_proba(X_test)[:, 1]
-soglia_medica = 0.45
+soglia_medica = 0.42
 y_pred = (y_pred_proba >= soglia_medica).astype(int)
 
 # metriche
